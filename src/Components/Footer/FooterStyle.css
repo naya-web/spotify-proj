@@ -1,0 +1,12 @@
+.footer{
+    border: 1px solid;
+    padding: 25px 15px;
+}
+.footer ul li{
+    list-style: none;
+    padding: 8px 0;
+}
+.footer ul li a{
+    text-decoration: none;
+    color: black;
+}

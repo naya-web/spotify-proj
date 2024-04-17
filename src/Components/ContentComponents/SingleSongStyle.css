@@ -1,0 +1,12 @@
+.song-info{
+    border: 1px solid;
+    padding: 20px;
+    border-radius: 6px;
+    margin-top: 20px;
+}
+.song-info button{
+    padding: 5px 20px; 
+}
+.song-info button i{
+    margin-right: 8px;
+}

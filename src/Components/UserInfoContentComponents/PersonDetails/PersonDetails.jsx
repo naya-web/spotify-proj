@@ -1,0 +1,27 @@
+import React from 'react'
+import './PersonDetailsStyle.css'
+
+function PersonDetails({detail1,detail2,detail3,detail4}) {
+  return (
+    <>
+    <div className="details">
+        <div className="row mx-0">
+            <div className="col-6 ">
+                <p className='detail'>{detail1}</p>
+            </div>
+            <div className='col-6 '>
+                <p  className='detail'>{detail2}</p>
+            </div>
+            <div className='col-6 '>
+                <p className='detail'>{detail3}</p>
+            </div>
+            <div className='col-6 '>
+                <p className='detail'>{detail4}</p>
+            </div>
+        </div>
+    </div>
+    </>
+  )
+}
+
+export default PersonDetails
