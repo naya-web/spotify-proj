@@ -1,3 +1,4 @@
+// 3
 function TotalTimePlays({dataSpotify}) {
     let totalTimePlays = 0;
   dataSpotify.map((elm) => (totalTimePlays += elm.ms_played));

@@ -1,3 +1,4 @@
+// 2
 function TotalDifSongForArtist({dataSpotify,artistName}){
 const totalSongForArtist =dataSpotify.filter(element=>element.master_metadata_album_artist_name===artistName)
 return new Set(totalSongForArtist).size

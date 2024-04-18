@@ -1,3 +1,4 @@
+// 1
 function TotalPlaysArtist({dataSpotify,artistName}) {
     const totalPlaysArtist = dataSpotify.filter(element=>element.master_metadata_album_artist_name===artistName)
 

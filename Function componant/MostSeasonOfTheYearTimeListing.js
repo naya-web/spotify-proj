@@ -1,3 +1,4 @@
+// 6
 //get month
 function formatDateMonth(dateString) {
   const date = new Date(dateString);

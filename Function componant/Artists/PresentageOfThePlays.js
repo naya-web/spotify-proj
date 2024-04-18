@@ -1,3 +1,4 @@
+// 4
 function getTotalPlays(dataSpotify) {
     return dataSpotify.length;
   }
