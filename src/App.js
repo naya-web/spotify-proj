@@ -18,9 +18,7 @@ function App() {
   return (
     <>
       <h1>hi im ahmad</h1>
-    
       <div>{O_TopAlbums}</div>
-
     {/* <HomePage/> */}
     <Routes>
         <Route path="/" element={<HomePage />} />
