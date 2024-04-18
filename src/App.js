@@ -10,9 +10,11 @@ import ReactDOM from 'react-dom';
 function App() {
   return (
     <>
+      <h1>hi im ahmad</h1>
+      <h2>hi</h2>
+
     {/* <HomePage/> */}
     <Routes>
-      <h1>hi im ahmad</h1>
         <Route path="/" element={<HomePage />} />
         <Route path="/userInfo" element={<UserInfo />} />
         <Route path="/moreSongs" element={<MoreSongs />} />

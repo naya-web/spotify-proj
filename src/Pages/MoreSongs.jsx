@@ -1,6 +1,6 @@
 import React from 'react'
 import Sorting from '../Components/SortingComponent/Sorting'
-import SingleSong from '../Components/ContentComponents/SingleSong'
+import SingleSong from '../Components/HomeContentComponents/SingleSong'
 import Footer from '../Components/Footer/Footer'
 import { Link } from 'react-router-dom';
 
