@@ -12,6 +12,7 @@ function App() {
     <>
     {/* <HomePage/> */}
     <Routes>
+      <h1>hi im ahmad</h1>
         <Route path="/" element={<HomePage />} />
         <Route path="/userInfo" element={<UserInfo />} />
         <Route path="/moreSongs" element={<MoreSongs />} />
