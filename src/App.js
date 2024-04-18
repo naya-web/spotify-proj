@@ -18,7 +18,7 @@ function App() {
   return (
     <>
       <h1>hi im ahmad</h1>
-      <h2>hi</h2>
+    
       <div>{O_TopAlbums}</div>
 
     {/* <HomePage/> */}
