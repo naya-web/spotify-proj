@@ -3,6 +3,7 @@ import { FaPlay } from "react-icons/fa";
 import './SingleSongStyle.css'
 
 function SingleSong({name,description}) {
+  
   return (
     <>
     <div className='song-info'>
