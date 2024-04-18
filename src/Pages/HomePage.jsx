@@ -1,9 +1,9 @@
 import React from 'react'
-import NavBar from '../Components/AllComponents/NavBar/NavBar'
+import NavBar from '../Components/NavBar/NavBar'
 import SideBar from '../Components/SideBar/SideBar'
 import { GrCaretPrevious } from "react-icons/gr";
 import { GrCaretNext } from "react-icons/gr";
-import Content from '../Components/Content/Content';
+import Content from '../Components/HomeContent/Content';
 import Footer from '../Components/Footer/Footer';
 
 function HomePage() {

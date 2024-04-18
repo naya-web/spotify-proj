@@ -1,6 +1,6 @@
 import React from 'react'
 import SideBar from '../Components/SideBar/SideBar'
-import NavBar from '../Components/AllComponents/NavBar/NavBar'
+import NavBar from '../Components/NavBar/NavBar'
 import Footer from '../Components/Footer/Footer'
 import UserInfoContent from '../Components/UserInfoContent/UserInfoContent'
 

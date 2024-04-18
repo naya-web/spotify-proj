@@ -1,6 +1,6 @@
 import React from 'react'
 import './ContentStyle.css'
-import SingleSong from '../ContentComponents/SingleSong'
+import SingleSong from '../HomeContentComponents/SingleSong'
 import { Link } from 'react-router-dom'
 
 function Content() {
