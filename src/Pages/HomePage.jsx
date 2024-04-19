@@ -1,15 +1,24 @@
 import React from 'react'
 import NavBar from '../Components/NavBar/NavBar'
-import SideBar from '../Components/SideBar/SideBar'
 import { GrCaretPrevious } from "react-icons/gr";
 import { GrCaretNext } from "react-icons/gr";
+import SideBar from '../Components/SideBar/SideBar'
 import Content from '../Components/HomeContent/Content';
 import Footer from '../Components/Footer/Footer';
-
+import './HomePageStyle.css'
+import bgimg from '../assets/bg.jpg'
 function HomePage() {
   return (
     <>
-    <div className="container">
+    <div style={{backgroundImage:`url(${bgimg})`,backgroundSize:'cover',backgroundPosition:'center',height:'100vh'}}>
+      <NavBar link1={'User'} link2={'Artist'} path={'/'}/>
+      <div  className='main-home-content'>
+        <p>Music Every Where</p>
+      </div>
+      <Footer/>
+    </div>
+  
+    {/* <div className="container">
       <div className='row mx-0 py-4'>
         <div className="col-3">
           <SideBar/>
@@ -24,7 +33,7 @@ function HomePage() {
         </div>
       </div>
     </div>
-    <Footer/>
+    <Footer/> */}
     </>
   )
 }

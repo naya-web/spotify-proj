@@ -1,0 +1,10 @@
+.main-home-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 69vh;
+    
+    font-size: 70px;
+    text-align: center;
+    color: #fff;
+}

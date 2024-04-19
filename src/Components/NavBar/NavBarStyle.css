@@ -1,0 +1,23 @@
+.navbar-brand h1{
+    display: inline-block;
+    color: #00B35F;
+}
+.navbar-brand{
+    width: 10%;
+
+}
+.navbar-brand img{
+    width: 100%;
+    border-radius: 50%;
+}
+.nav-item a{
+    text-decoration: none;
+    font-size: 25px !important;
+    color: #fff !important;
+    padding-left: 15px;
+    transform: 0.5s;
+}
+.nav-item a:hover{
+    color: #00B35F !important;
+
+}

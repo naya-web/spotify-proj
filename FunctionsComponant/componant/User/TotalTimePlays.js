@@ -5,3 +5,4 @@ function TotalTimePlays({dataSpotify}) {
   return <h2> totalTimePlays : {totalTimePlays}</h2>
 }
 export default TotalTimePlays
+

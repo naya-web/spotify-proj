@@ -3,6 +3,7 @@ import Sorting from '../Components/SortingComponent/Sorting'
 import SingleSong from '../Components/HomeContentComponents/SingleSong'
 import Footer from '../Components/Footer/Footer'
 import { Link } from 'react-router-dom';
+import NavBar from '../Components/NavBar/NavBar';
 
 function MoreSongs() {
     const songData=[
@@ -46,7 +47,8 @@ function MoreSongs() {
   return (
     <>
     <div className="container">
-        <Link to={'/'} style={{textDecoration:'none',color:'black'}}>Home</Link>
+        <NavBar path={'/homeUser'}/>
+        {/* <Link to={'/homeUser'} style={{textDecoration:'none',color:'black'}}>Home</Link> */}
         <Sorting/>
         <div className="row mx-0 pb-5">
             {

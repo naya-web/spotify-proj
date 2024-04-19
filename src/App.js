@@ -1,6 +1,7 @@
 import './App.css';
 import HomePage from './Pages/HomePage.jsx';
 import UserInfo from './Pages/UserInfo.jsx';
+import UserHome from './Pages/UserHome.jsx';
 import MoreSongs from './Pages/MoreSongs.jsx';
 import 'bootstrap/dist/css/bootstrap.css';
 import { Routes, Route } from "react-router-dom";
@@ -17,11 +18,13 @@ function App() {
   // ----------------------
   return (
     <>
-      <h1>hi im ahmad</h1>
-      <div>{O_TopAlbums}</div>
+      {/* <h1>hi im ahmad</h1> */}
+      {/* <div>{O_TopAlbums}</div> */}
+
     {/* <HomePage/> */}
     <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/homeUser" element={<UserHome />} />
         <Route path="/userInfo" element={<UserInfo />} />
         <Route path="/moreSongs" element={<MoreSongs />} />
         {/* <Route path="about" element={<About />} /> */}

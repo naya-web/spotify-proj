@@ -1,12 +1,26 @@
 .footer{
-    border: 1px solid;
+    /* border: 1px solid; */
     padding: 25px 15px;
 }
-.footer ul li{
+/* .footer ul li{
     list-style: none;
     padding: 8px 0;
 }
 .footer ul li a{
     text-decoration: none;
     color: black;
+} */
+
+.footer-icons{
+    text-align: center;
+}
+.footer-icons i{
+    font-size: 32px;
+    margin: 15px;
+    color: #fff;
+    transition: 0.5s;
+}
+.footer-icons i:hover{
+    color: #00B35F;
+    
 }

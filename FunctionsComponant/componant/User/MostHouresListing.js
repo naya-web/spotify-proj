@@ -8,7 +8,7 @@ function formatDateHours(dateString) {
   return `${hours}`;
 }
 //MostHouresListing
-
+//
 function MostHouresListing({dataSpotify}) {
   const mostHouers = {};
   const arrForHouers = [];
@@ -18,6 +18,7 @@ function MostHouresListing({dataSpotify}) {
   // console.log(arrForHouers);
 
   arrForHouers.forEach((hour, index) => {
+    // check if the current hour exists as a key in the mostHouers object. If it doesn't, the condition evaluates to true.
     if (!mostHouers[hour]) {
       mostHouers[hour] = arrForMs_played[index];
     } else {

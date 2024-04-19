@@ -13,7 +13,7 @@ function UserInfo() {
                 <SideBar/>
             </div>
             <div className="col-9">
-                <NavBar/>
+                <NavBar path={'/homeUser'}/>
                 <UserInfoContent/>
             </div>
         </div>
