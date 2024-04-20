@@ -1,4 +1,3 @@
-// 5
 //get hours
 function formatDateHours(dateString) {
   const date = new Date(dateString);
@@ -18,7 +17,6 @@ function MostHouresListing({dataSpotify}) {
   // console.log(arrForHouers);
 
   arrForHouers.forEach((hour, index) => {
-    // check if the current hour exists as a key in the mostHouers object. If it doesn't, the condition evaluates to true.
     if (!mostHouers[hour]) {
       mostHouers[hour] = arrForMs_played[index];
     } else {
@@ -36,6 +34,6 @@ function MostHouresListing({dataSpotify}) {
       maxMsPlayed = mostHouers[hour];
     }
   });
-  return <h2>` the most our${mostPlayedHour} the sicands ${maxMsPlayed}`;</h2>
+  return ` the most our : ${mostPlayedHour}`;
 }
 export default MostHouresListing;

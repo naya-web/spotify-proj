@@ -1,4 +1,3 @@
-// 4
 // get the correct date
 function formatDate(dateString) {
   const date = new Date(dateString);
@@ -32,19 +31,16 @@ function AverageTimeSpentListening({ dataSpotify }) {
   const newFormattedDatesSorted = formattedDatesSortedBySet.sort((a, b) => {
     return new Date(a) - new Date(b);
   });
-  console.log(newFormattedDatesSorted);
+  // console.log(newFormattedDatesSorted);
   //remove the reppet data
   // const uniqueDatesSet = new Set(formattedDatesSorted);
   // //return it to array
   // const formattedDatesSortedBySet = [...uniqueDatesSet];
   //get the avg
   // console.log(formattedDatesSortedBySet.length);
+  const av = Math.trunc((getTotalTimePlaysWithOutSkipping(dataSpotify) /newFormattedDatesSorted.length)/1000)
   return (
-    <h2>
-      AverageTimeSpentListening :{" "}
-      {getTotalTimePlaysWithOutSkipping(dataSpotify) /
-        newFormattedDatesSorted.length}
-    </h2>
+      `AverageTimeSpentListening ${av}`
   );
 }
 export default AverageTimeSpentListening;

@@ -9,7 +9,7 @@ function Sorting({onOptionChange}) {
   
   return (
     <>
-    <div className="row mx-0 py-5 justify-content-between align-items-center">
+    <div className="row mx-0 py-5 justify-content-between align-items-center " style={{minHeight:"60vh"}}>
         <div className="col-3 d-flex justify-content-center  ">
           <div>
             <p className='px-2  py-2 border '>All Songs</p>

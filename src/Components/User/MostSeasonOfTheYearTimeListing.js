@@ -1,4 +1,3 @@
-// 6
 //get month
 function formatDateMonth(dateString) {
   const date = new Date(dateString);
@@ -63,6 +62,6 @@ function MosTSeasonOfTheYearTimeListing({dataSpotify}) {
     if (seasons[season] > maxSeason) maxSeason = seasons[season];
     seasonName = season;
   }
-  return <h2>`${seasonName} `;</h2>
+  return seasonName ;
 }
 export default MosTSeasonOfTheYearTimeListing

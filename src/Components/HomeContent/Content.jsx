@@ -3,7 +3,7 @@ import './ContentStyle.css'
 import SingleSong from '../HomeContentComponents/SingleSong'
 import { Link } from 'react-router-dom'
 
-function Content(path) {
+function Content({path}) {
     const songData=[
         {
             name:'Song 1',
@@ -23,7 +23,7 @@ function Content(path) {
     <div className="content">
         <h3>Popular Songs</h3>
         <div className='d-flex justify-content-end me-4 mt-4'>
-            <Link to={'/moreSongs'}>
+            <Link to={path}>
                 <button className='px-2 py-1'>Show More</button>
             </Link>
         </div>

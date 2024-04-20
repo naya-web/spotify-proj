@@ -1,13 +1,26 @@
 .search-box{
     border: 1px solid black;
     padding: 5px 10px;
-    border-radius: 6px;
+    border-radius: 10px;
     width: 90%;
     margin: 0 auto;
+    border: none;
+    outline: none;
+    box-shadow:  0 0 15px rgb(24, 167, 50);
+    color: aqua;
 }
 .search-box input{
     border: none;
+    outline: none;
+    font-weight: bold;
+    background-color: transparent;
+
+}
+.search-box input::placeholder{
+    color:rgba(0, 255, 191, 0.705);
+
 }
 .search-box i{
     margin-right: 10px;
+    color:rgba(0, 255, 238, 0.698);
 }

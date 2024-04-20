@@ -17,7 +17,7 @@ function ArtistHome() {
           <div className='text-end mt-3 fs-2'>
           </div>
           {/* <h1>Artist home content</h1> */}
-            <Content/>
+            <Content path={'/moreSongsArtist'}/>
         </div>
       </div>
     </div>

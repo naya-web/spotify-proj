@@ -18,9 +18,19 @@
     font-size: 32px;
     margin: 15px;
     color: #00B35F;
-    opacity: .7;
+    opacity: 0.5;
     transition: 0.5s;
+    display: inline-block;
 }
 .footer-icons i:hover{
     opacity: 1;
+}
+.footer-icons {
+    display: inline-block;
+    font-size: 24px;
+    transition: transform 0.3s ease; /* Add smooth transition */
+}
+
+.footer-icons i:hover {
+    transform: scale(1.2); /* Scale up the icon on hover */
 }
