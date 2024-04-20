@@ -1,5 +1,5 @@
 import dataSpotify from '../../../spotify_data.history.json'
-const toop100artistlast1year = () => {
+const Toop100artistlast1year = () => {
     const year = new Date();
     year.setFullYear(year.getFullYear() - 1);
     
@@ -51,5 +51,5 @@ const toop100artistlast1year = () => {
       </div>
     );
     };
-    const  O_toop100artistlast1year=toop100artistlast1year()
-  export default toop100artistlast1year  
+    // const  O_toop100artistlast1year=toop100artistlast1year()
+  export default Toop100artistlast1year  

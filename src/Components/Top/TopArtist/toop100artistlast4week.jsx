@@ -1,6 +1,6 @@
 import dataSpotify from '../../../spotify_data.history.json'
 
-const toop100artistlast4week = () => {
+const Toop100artistlast4week = () => {
     const fourweek = new Date();
     fourweek.setDate(fourweek.getDate() - 28);
     
@@ -52,5 +52,5 @@ const toop100artistlast4week = () => {
       </div>
     );
     };
-    const  O_toop100artistlast4week=toop100artistlast4week()
-export default toop100artistlast4week   
+    // const  O_toop100artistlast4week=toop100artistlast4week()
+export default Toop100artistlast4week   

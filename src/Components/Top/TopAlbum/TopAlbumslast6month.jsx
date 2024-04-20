@@ -40,5 +40,5 @@ function TopAlbumslast6month() {
       </div>
     );
   }
-  const O_TopAlbumslast6month=TopAlbumslast6month()
+  // const O_TopAlbumslast6month=TopAlbumslast6month()
 export default TopAlbumslast6month 

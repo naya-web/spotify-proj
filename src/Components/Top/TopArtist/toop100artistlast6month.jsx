@@ -1,6 +1,6 @@
 import dataSpotify from '../../../spotify_data.history.json'
 
-const toop100artistlast6month = () => {
+const Toop100artistlast6month = () => {
     // حساب تاريخ قبل ستة أشهر من الوقت الحالي
     const sixMonthsAgo = new Date();
     sixMonthsAgo.setMonth(sixMonthsAgo.getMonth() - 6);
@@ -53,6 +53,6 @@ const toop100artistlast6month = () => {
       </div>
     );
   };
-  const  O_toop100artistlast6month=toop100artistlast6month()
+  // const  O_toop100artistlast6month=toop100artistlast6month()
 
-  export default toop100artistlast6month
+  export default Toop100artistlast6month

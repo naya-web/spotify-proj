@@ -5,30 +5,23 @@ import UserHome from './Pages/UserHome.jsx';
 import MoreSongs from './Pages/MoreSongs.jsx';
 import 'bootstrap/dist/css/bootstrap.css';
 import { Routes, Route } from "react-router-dom";
-import dataSpotify from "./spotify_data.history.json"
-import ReactDOM from 'react-dom';
-import TopAlbums from './Components/filter top 100 album/filterToopalbum.js';
+import ArtistHome from './Pages/ArtistHome/ArtistHome.jsx';
+import ArtistInfo from './Pages/ArtistInfo/ArtistInfo.jsx';
 
 
 function App() {
-  // -----------------------
   
-  // const O_TopAlbums = TopAlbums()
 
-  // ----------------------
   return (
     <>
-      {/* <h1>hi im ahmad</h1> */}
-      {/* <div>{O_TopAlbums}</div> */}
-
-    {/* <HomePage/> */}
     <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/homeUser" element={<UserHome />} />
         <Route path="/userInfo" element={<UserInfo />} />
         <Route path="/moreSongs" element={<MoreSongs />} />
-        {/* <Route path="about" element={<About />} /> */}
-        {/* <Route path="contact" element={<Contact />} /> */}
+        <Route path="/artistHome" element={<ArtistHome />} />
+        <Route path="/artistInfo" element={<ArtistInfo />} />
+
       </Routes>
     </>
   );

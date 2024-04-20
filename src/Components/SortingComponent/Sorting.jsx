@@ -29,22 +29,22 @@ function Sorting({onOptionChange}) {
         <div className="col-3 d-flex justify-content-center ">
           <div>          
             <label for="song-select" class="me-2">Top 10 Artist:</label>
-              <select name="" id="song-select">
-                  <option value="last 4 weeks">last 4 weeks</option>
-                  <option value="last 6 months">last 6 months</option>
-                  <option value="last year">last year</option>
-                  <option value="From beginning">From beginning</option>
+              <select name="" id="song-select" onChange={handleChange}>
+                  <option value="Artist last 4 weeks">last 4 weeks</option>
+                  <option value="Artist last 6 months">last 6 months</option>
+                  <option value="Artist last year">last year</option>
+                  <option value="Artist From beginning">From beginning</option>
               </select>
           </div>
         </div>
         <div className="col-3 d-flex justify-content-center ">
         <div>          
             <label for="song-select" class="me-2">Top 10 Album:</label>
-              <select name="" id="song-select">
-                  <option value="last 4 weeks">last 4 weeks</option>
-                  <option value="last 6 months">last 6 months</option>
-                  <option value="last year">last year</option>
-                  <option value="From beginning">From beginning</option>
+              <select name="" id="song-select" onChange={handleChange}>
+                  <option value="Album last 4 weeks">last 4 weeks</option>
+                  <option value="Album last 6 months">last 6 months</option>
+                  <option value="Album last year">last year</option>
+                  <option value="Album From beginning">From beginning</option>
               </select>
           </div>
         </div>

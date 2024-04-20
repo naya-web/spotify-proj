@@ -40,5 +40,5 @@ function TopAlbumslast1year() {
       </div>
     );
   }
-  const O_TopAlbumslast1year=TopAlbumslast1year()
+  // const O_TopAlbumslast1year=TopAlbumslast1year()
 export default TopAlbumslast1year  

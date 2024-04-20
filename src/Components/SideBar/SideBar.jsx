@@ -3,7 +3,7 @@ import SideBarOptions from '../SideBarComponents/SideBarOptions'
 import SearchBox from '../SideBarComponents/SearchBox'
 import './SideBarStyle.css'
 
-function SideBar() {
+function SideBar({path,info}) {
   return (
     <>
     <div className="side-bar">
@@ -11,7 +11,7 @@ function SideBar() {
       <div className='border-left'></div>
       <div className='border-right'></div>
         <SearchBox/>
-        <SideBarOptions/>
+        <SideBarOptions path={path} info={info}/>
       {/* </div> */}
       <div className='border-bottom'></div>
     </div>

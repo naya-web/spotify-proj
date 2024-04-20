@@ -10,7 +10,14 @@ import Toop100songlast4week from '../Components/Top/TopSong/toop100songlast4week
 import Toop100songlast6week from '../Components/Top/TopSong/toop100songlast6month';
 import Top100Songfrombegining from '../Components/Top/TopSong/Top100Songfrombegining';
 import Toop100SongTablelastyear from '../Components/Top/TopSong/toop100SongTablelastyear';
-
+import Toop100artistlast4week from '../Components/Top/TopArtist/toop100artistlast4week';
+import Toop100artistlast6month from '../Components/Top/TopArtist/toop100artistlast6month';
+import Toop100artistlast1year from '../Components/Top/TopArtist/toop100artistlast1year';
+import Top100Artistsfrombegining from '../Components/Top/TopArtist/Top100Artistsfrombegining';
+import TopAlbumslast4week from '../Components/Top/TopAlbum/TopAlbumslast4week';
+import TopAlbumslast6month from '../Components/Top/TopAlbum/TopAlbumslast6month';
+import TopAlbumslast1year from '../Components/Top/TopAlbum/TopAlbumslast1year';
+import Top100Albumsfrombigning from '../Components/Top/TopAlbum/Top100Albumsfrombigning';
 
 function MoreSongs() {
 
@@ -31,19 +38,15 @@ function MoreSongs() {
         {filterOption === 'last 6 months' && <Toop100songlast6week />}
         {filterOption === 'last year' && <Toop100SongTablelastyear />}
         {filterOption === 'From beginning' && <Top100Songfrombegining />}
-            <div className="row mx-0 pb-5">
-                {/* {
-                    songData.map((e,i)=>{
-                        return(
-                            <>
-                            <div className="col-4">
-                                <SingleSong name={e.name} description={e.description}/>
-                            </div>
-                            </>
-                        )
-                    })
-                } */}
-        </div>
+        {filterOption === 'Artist last 4 weeks' && <Toop100artistlast4week />}
+        {filterOption === 'Artist last 6 months' && <Toop100artistlast6month />}
+        {filterOption === 'Artist last year' && <Toop100artistlast1year />}
+        {filterOption === 'Artist From beginning' && <Top100Artistsfrombegining />}
+        {filterOption === 'Album last 4 weeks' && <TopAlbumslast4week />}
+        {filterOption === 'Album last 6 months' && <TopAlbumslast6month />}
+        {filterOption === 'Album last year' && <TopAlbumslast1year />}
+        {filterOption === 'Album From beginning' && <Top100Albumsfrombigning />}
+
         </Container>
     <Footer/>
     </div>
