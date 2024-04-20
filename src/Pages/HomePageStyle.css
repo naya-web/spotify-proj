@@ -8,3 +8,10 @@
     text-align: center;
     color: #fff;
 }
+.more{
+    border: none;
+    background: linear-gradient(to top, #2C3E50, #000000); 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(40, 217, 111) inset;
+    color: rgb(1, 252, 252);
+}
