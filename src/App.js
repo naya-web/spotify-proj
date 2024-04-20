@@ -13,7 +13,7 @@ import TopAlbums from './Components/filter top 100 album/filterToopalbum.js';
 function App() {
   // -----------------------
   
-  const O_TopAlbums = TopAlbums()
+  // const O_TopAlbums = TopAlbums()
 
   // ----------------------
   return (

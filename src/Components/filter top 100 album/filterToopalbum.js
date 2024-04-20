@@ -1,4 +1,5 @@
  import dataSpotify from '../../spotify_data.history.json'
+ import SingleSong from '../HomeContentComponents/SingleSong';
  
   function TopAlbums() {
     const data = dataSpotify;
@@ -10,6 +11,7 @@
     data.forEach((track) => {
       const albumName = track.master_metadata_album_album_name;
       const msPlayed = track.ms_played;
+      
 
       if (!albumMap[albumName]) {
         albumMap[albumName] = 0;
@@ -30,14 +32,14 @@
     return (
       <div>
         <h2>أعلى 10 ألبومات حسب وقت الاستماع</h2>
-        <ul>
+        {/* <ul> */}
           {sortedAlbums.map((album, index) => (
-            <li key={album.albumName}>
-              {index + 1}. {album.albumName}
-
-            </li>
+            // <li key={album.albumName}>
+            //   {index + 1}. {album.albumName}
+            // </li>
+            <SingleSong name={album.albumName} description={album.master_metadata_track_name}/>
           ))}
-        </ul>
+        {/* </ul> */}
       </div>
     );
   }

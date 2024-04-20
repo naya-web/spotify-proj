@@ -1,7 +1,7 @@
-
+import dataSpotify from '../../spotify_data.history.json'
   // --------1exrcise----- top 10artist
 
-  const TopArtists = () => {
+  const Top100Artistsfrombegining = () => {
     // إنشاء كائن لتجميع إجمالي عدد المشاهدات لكل فنان
     const artists = [];
 
@@ -41,10 +41,10 @@
     );
   };
 
-  const the_TopArtists = TopArtists()
+  // const the_TopArtists = TopArtists()
 
   // --------------exrcise 2 top 100 track----------
-  function TopTracks() {
+  function Top100Songfrombegining() {
 
     // فرز الأغاني بناءً على وقت الاستماع
     const sortedTracks = dataSpotify.sort((a, b) => b.ms_played - a.ms_played).slice(0, 11)
@@ -65,12 +65,12 @@
       </div>
     );
   }
-  const O_TopTracks = TopTracks()
+  // const O_TopTracks = TopTracks()
 
 
   // ----------------------------------------- exrcisse 3 top 10 albums
 
-  function TopAlbums() {
+  function Top100Albumsfrombigning() {
     const data = dataSpotify;
 
     // إنشاء كائن لتجميع بيانات الألبومات
@@ -111,10 +111,10 @@
       </div>
     );
   }
-  const O_TopAlbums = TopAlbums()
+  // const O_TopAlbums = TopAlbums()
   // ----------------------------last6month top100song
 
-  const Toop100songlast4week = () => {
+  const toop100songlast6month = () => {
     const sixMonthsAgo = new Date();
     sixMonthsAgo.setMonth(sixMonthsAgo.getMonth() - 6);
   
@@ -152,12 +152,12 @@
   };
   
 
-  const toop100songlast6month=Toop100songlast4week()
+  const O_toop100songlast6month=toop100songlast6month()
 // ------------------------toop100 song last 4 week 
 
 
 
-const SongTable = () => {
+const toop100songlast4week = () => {
   // حساب تاريخ الأربعة أسابيع الأخيرة
   const fourWeeksAgo = new Date();
   fourWeeksAgo.setDate(fourWeeksAgo.getDate() - 28);
@@ -197,12 +197,12 @@ const SongTable = () => {
   );
 };
 
-  const SongTable2last4week=SongTable()
+  // const SongTable2last4week=SongTable()
 
 // ---------------------------top 100 song last 1 year 
 
 
-const SongTablelastyear = () => {
+const toop100SongTablelastyear = () => {
   // حساب تاريخ قبل سنة من الوقت الحالي
   const oneYearAgo = new Date();
   oneYearAgo.setFullYear(oneYearAgo.getFullYear() - 1);
@@ -240,7 +240,7 @@ const SongTablelastyear = () => {
     </div>
   );
 };
-const O_SongTablelastyear=SongTablelastyear()
+// const O_SongTablelastyear=SongTablelastyear()
 // ------------------------------------
 
 // dont forget do export all component ok ??
