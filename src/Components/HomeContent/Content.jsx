@@ -3,7 +3,7 @@ import './ContentStyle.css'
 import SingleSong from '../HomeContentComponents/SingleSong'
 import { Link } from 'react-router-dom'
 
-function Content() {
+function Content(path) {
     const songData=[
         {
             name:'Song 1',

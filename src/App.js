@@ -21,6 +21,7 @@ function App() {
         <Route path="/moreSongs" element={<MoreSongs />} />
         <Route path="/artistHome" element={<ArtistHome />} />
         <Route path="/artistInfo" element={<ArtistInfo />} />
+        {/* <Route path="/moreSongsArtist" element={<MoreSongArtist />} /> */}
 
       </Routes>
     </>

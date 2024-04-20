@@ -24,7 +24,7 @@ function NavBar({link1,link2,path}) {
               <Link to={'homeUser'}>{link1}</Link>
             </li>
             <li class="nav-item" >
-              <Link to={'userHome'}>{link2}</Link>
+              <Link to={'artistHome'}>{link2}</Link>
             </li>
             </ul>
           </div>
