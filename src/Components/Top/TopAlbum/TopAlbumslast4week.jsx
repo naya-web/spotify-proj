@@ -1,46 +1,56 @@
 import dataSpotify from '../../../spotify_data.history.json'
 import { useEffect } from "react";
+import './style-toopalbum.css'
 
 
 function TopAlbumslast4week() {
-    useEffect(() => {
-      // حساب التاريخ قبل اربع اسابيع من الوقت الحالي
-      const fourweek = new Date();
-      fourweek.setDate(fourweek.setDate() - 28);
-  
-    
-      const albumTimes = {};
-      dataSpotify.forEach((song) => {
-        const ts = new Date(song.ts);
-        if (ts >= fourweek) {
-          const album = song.master_metadata_album_album_name;
-          const msPlayed = song.ms_played;
-          if (album && album.trim() !== '' && !albumTimes[album]) {
-            albumTimes[album] = msPlayed;
-          }
-        }
-      });
-  
-    
-      const sortedAlbums = Object.entries(albumTimes).sort((a, b) => b[1] - a[1]);
-  
-  
-      const topAlbums = sortedAlbums
-        .slice(0, 100)
-        .map(([album, msPlayed]) => ({ album, msPlayed }));
-  
-     
-      console.log(topAlbums);
-    });
-  
-    return (
-      <div>
-         <h2>Toop 100 Album Last 4 Week</h2>
+  const data = dataSpotify;
 
-        {/* فيكي تعرضيهن بالطريقه يلي بدك */}
-       
-      </div>
-    );
+  // إنشاء كائن لتجميع بيانات الألبومات
+  const albumMap = {};
+
+  // حساب وقت الاستماع لكل ألبوم
+  data.forEach((track) => {
+    const albumName = track.master_metadata_album_album_name;
+    const msPlayed = track.ms_played;
+
+    if (!albumMap[albumName]) {
+      albumMap[albumName] = 0;
+    }
+
+    albumMap[albumName] += msPlayed;
+  });
+
+  // تحويل الكائن إلى مصفوفة من الألبومات
+  const albums = Object.keys(albumMap).map((albumName) => ({
+    albumName,
+    msPlayed: albumMap[albumName],
+  }));
+
+  // فرز الألبومات بناءً على وقت الاستماع
+  const sortedAlbums = albums.sort((a, b) => b.msPlayed - a.msPlayed).slice(0, 100);
+
+  return (
+    <div>
+      <h2>Toop 100 Album Last 4 week</h2>
+      <ul>
+        <div className="container4">
+        {sortedAlbums.map((album, index) => (
+          <li key={album.albumName}>
+           
+  
+          </li>
+        ))}
+        </div>
+      </ul>
+
+
+
+
+
+      
+    </div>
+  );
   }
   // const O_TopAlbumslast4week=TopAlbumslast4week()
   export default TopAlbumslast4week
