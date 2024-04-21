@@ -28,9 +28,9 @@ function Artist2() {
             <Link to={'/moreSongsArtist'}>
                 <button className='p-3 more m-1'>Show More</button>
             </Link>
-            <Link to={'/moreSongs'}>
+            {/* <Link to={'/moreSongs'}>
                 <button className='p-3 more m-1'>more songs</button>
-            </Link>
+            </Link> */}
         </div>
     </div>
     <Footer/>

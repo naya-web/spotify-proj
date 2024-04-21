@@ -1,0 +1,7 @@
+.details .detail{
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 0 0 10px rgb(0, 255, 204),0 0 10px rgb(0, 255, 204) inset,0 0 20px rgb(0, 255, 204) ;
+    color: aliceblue;
+    font-weight: bold;
+}

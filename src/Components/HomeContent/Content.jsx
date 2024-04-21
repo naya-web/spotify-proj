@@ -4,23 +4,23 @@ import SingleSong from '../HomeContentComponents/SingleSong'
 import { Link } from 'react-router-dom'
 
 function Content({path}) {
-    const songData=[
-        {
-            name:'Song 1',
-            description: 'Lorem, ipsum dolor',
-        },
-        {
-            name:'Song 2',
-            description: 'Lorem, ipsum dolor',
-        },
-        {
-            name:'Song 3',
-            description: 'Lorem, ipsum dolor',
-        }
-    ]
+    // const songData=[
+    //     {
+    //         name:'Song 1',
+    //         description: 'Lorem, ipsum dolor',
+    //     },
+    //     {
+    //         name:'Song 2',
+    //         description: 'Lorem, ipsum dolor',
+    //     },
+    //     {
+    //         name:'Song 3',
+    //         description: 'Lorem, ipsum dolor',
+    //     }
+    // ]
   return (
     <>
-    <div className="content">
+    {/* <div className="content">
         <h3>Popular Songs</h3>
         <div className='d-flex justify-content-end me-4 mt-4'>
             <Link to={path}>
@@ -40,7 +40,7 @@ function Content({path}) {
                     })
                 }
         </div>
-    </div>
+    </div> */}
     </>
   )
 }

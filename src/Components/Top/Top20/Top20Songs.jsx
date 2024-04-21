@@ -5,9 +5,10 @@ import data from '../../../spotify_data.history.json'
     let dateSince;
     if(since === "since the beginning"){
       data.forEach(song => {
-        if(song["master_metadata_album_artist_name"] ==artist)
+        if(song["master_metadata_album_artist_name"] ===artist)
           obj[song["master_metadata_track_name"]] = (obj[song["master_metadata_track_name"]] || 0) + song.ms_played;
       });
+      console.log(obj)
       let top20 =getTop100(obj).slice(0,20)
       return top20      
     }
@@ -27,6 +28,7 @@ import data from '../../../spotify_data.history.json'
         obj[song["master_metadata_track_name"]] = (obj[song["master_metadata_track_name"]] || 0) + song.ms_played;
     });
     let top20 =getTop100(obj).slice(0,20)
+    console.log(top20)
     return top20
   }
 

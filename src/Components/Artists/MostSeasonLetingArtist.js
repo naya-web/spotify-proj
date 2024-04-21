@@ -55,7 +55,7 @@ function MostSeasonLetingArtist({ dataSpotify, artistName }) {
     seasonName = season;
   }
   const timeInSeconds = maxSeason / 1000;
-  return <h2>season : {seasonName} Time : {timeInSeconds} </h2>;
+  return ` season : ${seasonName} Time : ${timeInSeconds} `
 }
 export default MostSeasonLetingArtist;
 

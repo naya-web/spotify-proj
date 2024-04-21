@@ -1,0 +1,20 @@
+.info{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    color: aliceblue;
+}
+.info h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 15px;
+    color: aliceblue;
+    letter-spacing: 2px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    text-decoration: underline wavy;
+    text-shadow: 0 0 10px rgb(21, 171, 113), 0 0 15px rgb(21, 171, 113);
+    background-clip: text;
+    text-transform: capitalize;
+}

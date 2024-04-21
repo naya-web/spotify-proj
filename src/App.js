@@ -23,7 +23,7 @@ function App() {
         <Route path="/moreSongs" element={<MoreSongs />} />
         <Route path="/artistHome" element={<Artist2 />} /> 
         {/* <Route path="/artistHome" element={<ArtistHome />} /> */}
-        <Route path="/artistInfo" element={<ArtistInfo />} />
+        <Route path="/artistInfo" element={<ArtistInfo dataSpotify={dataSpotify} artistName={'Travis Scott'} />} />
         <Route path="/moreSongsArtist" element={<MoreSongArtist />} />
 
       </Routes>

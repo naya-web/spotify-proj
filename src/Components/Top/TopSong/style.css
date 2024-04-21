@@ -215,3 +215,13 @@ body{
     }
   }
 
+.texts{
+  position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: traNslate(-50%, -50%);
+    text-align: center;
+}
+.artist-btns button{
+  
+}

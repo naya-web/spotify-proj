@@ -1,11 +1,11 @@
 // 6
-function PosTopArtists({ data, artistName }) {
-    const TopArtists = (data) => {
+function PosTopArtists({ dataSpotify, artistName }) {
+    const TopArtists = (dataSpotify) => {
       // Create an object to aggregate the total number of plays for each artist
       const artists = {};
   
       // Aggregate the total number of plays for each artist
-      data.forEach((item) => {
+      dataSpotify.forEach((item) => {
         const name = item.master_metadata_album_artist_name;
         const plays = item.ms_played;
   
@@ -29,7 +29,7 @@ function PosTopArtists({ data, artistName }) {
       return sortedArtists;
     };
   
-    const the_TopArtists = TopArtists(data);
+    const the_TopArtists = TopArtists(dataSpotify);
   
     // Find the position of the specified artist
     const artistPosition = the_TopArtists.find((item) => item.artist === artistName)?.position;
