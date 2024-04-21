@@ -34,7 +34,8 @@ const Top100Artistsfrombegining = () => {
 
     return (
       <div>
-        <h2>أعلى 10 فنانين حسب إجمالي عدد المشاهدات</h2>
+            <h2>Toop 100 Artist </h2>
+
         
           <div className="container3">
           {sortedArtists.map(([artistName, plays], index) => (

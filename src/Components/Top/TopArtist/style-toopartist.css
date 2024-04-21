@@ -3,10 +3,13 @@
     flex-wrap: wrap;
     justify-content: space-around;
 }
+h2{
+  text-align: center;
+}
 
 .card-client {
     margin:100px;
-    background: #2cb5a0;
+    background: #46605c;
     width: 13rem;
     padding-top: 25px;
     padding-bottom: 25px;

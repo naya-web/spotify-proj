@@ -35,7 +35,8 @@ function TopAlbumslast4week() {
   
     return (
       <div>
-        <h2>أفضل 100 ألبوم مرتبة حسب وقت الاستماع في الاربع اسابيع الأخيرة</h2>
+         <h2>Toop 100 Album Last 4 Week</h2>
+
         {/* فيكي تعرضيهن بالطريقه يلي بدك */}
        
       </div>

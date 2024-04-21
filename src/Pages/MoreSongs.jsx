@@ -18,38 +18,60 @@ import TopAlbumslast4week from '../Components/Top/TopAlbum/TopAlbumslast4week';
 import TopAlbumslast6month from '../Components/Top/TopAlbum/TopAlbumslast6month';
 import TopAlbumslast1year from '../Components/Top/TopAlbum/TopAlbumslast1year';
 import Top100Albumsfrombigning from '../Components/Top/TopAlbum/Top100Albumsfrombigning';
+import './Moreinfostyle.css'
 
 function MoreSongs() {
 
-    const [filterOption, setFilterOption] = useState('last 4 weeks');
+  const [filterOption, setFilterOption] = useState('last 4 weeks');
 
-    const handleFilterChange = (option) => {
-       setFilterOption(option);
-    };
+  const handleFilterChange = (option) => {
+    setFilterOption(option);
+  };
   return (
     <>
-    <div>
+      <div>
         <Container>
-            <NavBar path={'/homeUser'}/>
-            {/* <Link to={'/homeUser'} style={{textDecoration:'none',color:'black'}}>Home</Link> */}
-            {/* <Sorting/> */}
-            <Sorting onOptionChange={handleFilterChange} />
-        {filterOption === 'last 4 weeks' && <Toop100songlast4week />}
-        {filterOption === 'last 6 months' && <Toop100songlast6week />}
-        {filterOption === 'last year' && <Toop100SongTablelastyear />}
-        {filterOption === 'From beginning' && <Top100Songfrombegining />}
-        {filterOption === 'Artist last 4 weeks' && <Toop100artistlast4week />}
-        {filterOption === 'Artist last 6 months' && <Toop100artistlast6month />}
-        {filterOption === 'Artist last year' && <Toop100artistlast1year />}
-        {filterOption === 'Artist From beginning' && <Top100Artistsfrombegining />}
-        {filterOption === 'Album last 4 weeks' && <TopAlbumslast4week />}
-        {filterOption === 'Album last 6 months' && <TopAlbumslast6month />}
-        {filterOption === 'Album last year' && <TopAlbumslast1year />}
-        {filterOption === 'Album From beginning' && <Top100Albumsfrombigning />}
+
+          <NavBar path={'/homeUser'} />
+          <div aria-label="Orange and tan hamster running in a metal wheel" role="img" class="wheel-and-hamster">
+            <div class="wheel"></div>
+            <div class="hamster">
+              <div class="hamster__body">
+                <div class="hamster__head">
+                  <div class="hamster__ear"></div>
+                  <div class="hamster__eye"></div>
+                  <div class="hamster__nose"></div>
+                </div>
+                <div class="hamster__limb hamster__limb--fr"></div>
+                <div class="hamster__limb hamster__limb--fl"></div>
+                <div class="hamster__limb hamster__limb--br"></div>
+                <div class="hamster__limb hamster__limb--bl"></div>
+                <div class="hamster__tail"></div>
+              </div>
+            </div>
+            <div class="spoke"></div>
+          </div>
+
+          {/* <Link to={'/homeUser'} style={{textDecoration:'none',color:'black'}}>Home</Link> */}
+          {/* <Sorting/> */}
+          <Sorting onOptionChange={handleFilterChange} />
+
+          {filterOption === 'last 4 weeks' && <Toop100songlast4week />}
+          {filterOption === 'last 6 months' && <Toop100songlast6week />}
+          {filterOption === 'last year' && <Toop100SongTablelastyear />}
+          {filterOption === 'From beginning' && <Top100Songfrombegining />}
+          {filterOption === 'Artist last 4 weeks' && <Toop100artistlast4week />}
+          {filterOption === 'Artist last 6 months' && <Toop100artistlast6month />}
+          {filterOption === 'Artist last year' && <Toop100artistlast1year />}
+          {filterOption === 'Artist From beginning' && <Top100Artistsfrombegining />}
+          {filterOption === 'Album last 4 weeks' && <TopAlbumslast4week />}
+          {filterOption === 'Album last 6 months' && <TopAlbumslast6month />}
+          {filterOption === 'Album last year' && <TopAlbumslast1year />}
+          {filterOption === 'Album From beginning' && <Top100Albumsfrombigning />}
 
         </Container>
-    <Footer/>
-    </div>
+        <Footer />
+      </div>
     </>
   )
 }
