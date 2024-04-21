@@ -11,12 +11,12 @@ function Sorting({onOptionChange}) {
   return (
     <>
     <div className="row mx-0 py-5 justify-content-between align-items-center " style={{minHeight:"60vh"}}>
-        <div className="col-3 d-flex justify-content-center  ">
+        {/* <div className="col-3 d-flex justify-content-center  ">
           <div>
             <p className='px-2  py-2 border '>All Songs</p>
           </div>
-        </div>
-        <div className="col-3 d-flex justify-content-center ">
+        </div> */}
+        <div className="col-4 d-flex justify-content-center ">
           <div> 
           <div class="cardd">
        
@@ -30,7 +30,7 @@ function Sorting({onOptionChange}) {
           </div>  
           </div>
         </div>
-        <div className="col-3 d-flex justify-content-center ">
+        <div className="col-4 d-flex justify-content-center ">
           <div>
           <div class="cardd">          
             <label for="song-select" class="me-2">Top 10 Artist:</label>
@@ -43,7 +43,7 @@ function Sorting({onOptionChange}) {
               </div>
           </div>
         </div>
-        <div className="col-3 d-flex justify-content-center ">
+        <div className="col-4 d-flex justify-content-center ">
         <div> 
         <div class="cardd">         
             <label for="song-select" class="me-2">Top 10 Album:</label>
