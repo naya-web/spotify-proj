@@ -34,7 +34,8 @@ function TopAlbumslast6month() {
   
     return (
       <div>
-        <h2>أفضل 100 ألبوم مرتبة حسب وقت الاستماع في الستة أشهر الأخيرة</h2>
+         <h2>Toop 100 Album Last 6 Month</h2>
+
         {/* فيكي تعرضيهن بالطريقه يلي بدك */}
        
       </div>

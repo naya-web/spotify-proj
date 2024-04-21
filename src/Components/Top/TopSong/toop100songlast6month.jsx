@@ -15,7 +15,7 @@ const Toop100songlast6week = () => {
     .slice(0, 100);
     return (
       <div>
-        <h2>أعلى 10 أغاني حسب وقت الاستماع في الستة الأشهر الأخيرة</h2>
+            <h2>Toop 100 Song Last 6 Month</h2>
       <div className="containerr">
 {topSongs.map((song,index)=>(
 

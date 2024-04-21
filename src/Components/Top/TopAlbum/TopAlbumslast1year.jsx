@@ -34,8 +34,9 @@ function TopAlbumslast1year() {
   
     return (
       <div>
-        <h2>أفضل 100 ألبوم مرتبة حسب وقت الاستماع في السنه الأخيرة</h2>
-        {/* فيكي تعرضيهن بالطريقه يلي بدك */}
+            <h2>Toop 100 Album Last Year</h2>
+
+        
        
       </div>
     );

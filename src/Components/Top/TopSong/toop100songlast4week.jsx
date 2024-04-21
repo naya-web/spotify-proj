@@ -17,7 +17,7 @@ const toop100songlast4week = () => {
 
   return (
     <div>
-      <h2>أعلى 10 أغاني حسب وقت الاستماع في الأربعة أسابيع الأخيرة</h2>
+     <h2>Toop 100 Song Last 4 Week</h2>
       {/* <table>
         <thead>
           <tr>

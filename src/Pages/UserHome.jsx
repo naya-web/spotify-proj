@@ -25,6 +25,9 @@ function UserHome() {
             <Link to={'/moreSongsArtist'}>
                 <button className='p-3 more'>Show More</button>
             </Link>
+            <Link to={'/moreSongs'}>
+                <button className='p-3 more'>more songs</button>
+            </Link>
         </div>
       <Footer />
       </div>
