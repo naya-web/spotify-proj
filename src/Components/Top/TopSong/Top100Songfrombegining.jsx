@@ -11,7 +11,7 @@ function Top100Songfrombegining() {
 
     return (
       <div>
-        <h2>أعلى 10 أغاني حسب وقت الاستماع</h2>
+             <h2>Toop 100 Song From Begining</h2>
         {/* <ul>
           {sortedTracks.map((track) => (
             <li key={track._id.$oid}>

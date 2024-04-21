@@ -34,7 +34,8 @@ const Toop100artistlast4week = () => {
     
     return (
       <div>
-        <h2>أعلى 10 فنانين حسب إجمالي عدد المرات التي تم تشغيل أغانيهم في الاسابيع الاربعة  الاخيره</h2>
+              <h2>Toop 100 Artist Last 4 Week </h2>
+
            
         <div className="container3">
           {topArtists.map(([artistName, plays], index) => (
