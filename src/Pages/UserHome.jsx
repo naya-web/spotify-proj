@@ -16,7 +16,7 @@ function UserHome() {
           <NavBar path={'/'}/>
           <div className='text-end mt-3 fs-2'>
           </div>
-            <Content path={'/moreSongs'}/>
+            <Content />
         </div>
       </div>
     </div>
