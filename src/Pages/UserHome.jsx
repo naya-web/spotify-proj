@@ -23,10 +23,10 @@ function UserHome() {
       </div>
       <div className='d-flex justify-content-end'>
             <Link to={'/moreSongsArtist'}>
-                <button className='p-3 more'>Show More</button>
+                <button className='p-3 more m-1'>Show More</button>
             </Link>
             <Link to={'/moreSongs'}>
-                <button className='p-3 more'>more songs</button>
+                <button className='p-3 more m-1'>more songs</button>
             </Link>
         </div>
       <Footer />
