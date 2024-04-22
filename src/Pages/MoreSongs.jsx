@@ -19,6 +19,7 @@ import TopAlbumslast6month from '../Components/Top/TopAlbum/TopAlbumslast6month'
 import TopAlbumslast1year from '../Components/Top/TopAlbum/TopAlbumslast1year';
 import Top100Albumsfrombigning from '../Components/Top/TopAlbum/Top100Albumsfrombigning';
 import './Moreinfostyle.css'
+import SideBar from '../Components/SideBar/SideBar'
 
 function MoreSongs() {
 
@@ -31,25 +32,35 @@ function MoreSongs() {
     <>
       <div>
         <Container>
-
-          <NavBar path={'/homeUser'} />
-          <div aria-label="Orange and tan hamster running in a metal wheel" role="img" class="wheel-and-hamster">
-            <div class="wheel"></div>
-            <div class="hamster">
-              <div class="hamster__body">
-                <div class="hamster__head">
-                  <div class="hamster__ear"></div>
-                  <div class="hamster__eye"></div>
-                  <div class="hamster__nose"></div>
+          <div className="row mx-0 pt-5">
+            <div className="col-3">
+              <SideBar info={'User Info'} path={'/userInfo'}/>
+            </div>
+            <div className="col-9">
+              <NavBar path={'/homeUser'} />
+              <div className=' d-flex justify-content-end pe-5 me-4'>
+                <div>
+                  <div aria-label="Orange and tan hamster running in a metal wheel" role="img" class="wheel-and-hamster">
+                    <div class="wheel"></div>
+                    <div class="hamster">
+                      <div class="hamster__body">
+                        <div class="hamster__head">
+                          <div class="hamster__ear"></div>
+                          <div class="hamster__eye"></div>
+                          <div class="hamster__nose"></div>
+                        </div>
+                        <div class="hamster__limb hamster__limb--fr"></div>
+                        <div class="hamster__limb hamster__limb--fl"></div>
+                        <div class="hamster__limb hamster__limb--br"></div>
+                        <div class="hamster__limb hamster__limb--bl"></div>
+                        <div class="hamster__tail"></div>
+                      </div>
+                    </div>
+                    <div class="spoke"></div>
+                  </div>
                 </div>
-                <div class="hamster__limb hamster__limb--fr"></div>
-                <div class="hamster__limb hamster__limb--fl"></div>
-                <div class="hamster__limb hamster__limb--br"></div>
-                <div class="hamster__limb hamster__limb--bl"></div>
-                <div class="hamster__tail"></div>
               </div>
             </div>
-            <div class="spoke"></div>
           </div>
 
           {/* <Link to={'/homeUser'} style={{textDecoration:'none',color:'black'}}>Home</Link> */}
