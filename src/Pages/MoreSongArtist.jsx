@@ -53,7 +53,7 @@ function MoreSongArtist() {
            </div>
          </div>
          </div>
-         <div class="texts">
+         <div class="texts1">
          <p class="title-1.5" style={{}}>{songName}</p>
          {/* <p class="title-2">{songName.master_metadata_album_album_name}</p> */}
          </div>
